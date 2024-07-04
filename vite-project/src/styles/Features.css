@@ -1,0 +1,72 @@
+.features{
+    background: black;
+}
+
+.features-container {
+    padding: 7vw 15vw;
+}
+
+.features-heading h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:  6.5vw;
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+    margin-bottom: 30px;
+}
+
+.features-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+.features-flex .feature-card{
+    flex-basis: 30%;
+   
+    background: rgb(0,13,92);
+    background: linear-gradient(204deg, rgba(0,13,92,1) 0%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.features-flex .feature-card img{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.features-flex .feature-card h2{
+    font-family: "Bebas Neue", sans-serif;
+    padding-top: 20px;
+    font-size:  2.8vw;
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 650px){
+    .features-container{
+        padding: 15vw 5vw;
+    
+    }
+
+    .features-heading h1{
+       font-size: 9vw;
+       text-align: center;
+    }
+    .features-flex{
+        justify-content: center;
+        gap: 50px;
+    }
+    .features-flex .feature-card{
+        flex-basis: 80%;
+    }
+
+    .features-flex .feature-card h2{
+        font-size: 6vw;
+    }
+}
