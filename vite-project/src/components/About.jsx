@@ -1,15 +1,33 @@
 import React from 'react';
 import "../styles/About.css";
 import aboutImg from "../assets/hero.webp";
+import {motion} from "framer-motion";
+
 
 const About = ({mainLink}) => {
   return (
     <>
-    <div className="about-section" ref={mainLink}>
+    <div className="about-section" ref={mainLink} data-scroll data-scroll-section data-scroll-speed={.1}>
         <div className="about-container">
             
             <div className="aboutheading">
-                <h2>About the Token</h2>
+                <motion.h2 
+                 initial={{opacity:0, x: -50}}
+                 whileInView={{
+                    opacity: 1,
+                    x: 0, // Slide in to its original position
+                    transition: {
+                      duration: 1, // Animation duration
+                      delay: 0.2 
+                    }
+                  }}
+
+                  viewport={{once: true}}
+                  
+                  
+                
+          
+                >About the Token</motion.h2>
             </div>
 
             <div className="about-flex">
@@ -28,3 +46,8 @@ const About = ({mainLink}) => {
 }
 
 export default About
+
+
+
+
+

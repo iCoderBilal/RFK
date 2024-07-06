@@ -1,6 +1,7 @@
 .about-container{
     padding: 7vw 15vw;
     background: rgb(231, 231, 231);
+    margin-top: -80px;
 }
 
 .aboutheading h2{
@@ -58,6 +59,7 @@ width: 100%;
 @media screen and (max-width: 650px) {
     .about-container{
         padding: 15vw 5vw;
+        margin-top: -64px;
     
     }
     .about-flex{

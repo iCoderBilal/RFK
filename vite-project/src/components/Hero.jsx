@@ -1,10 +1,11 @@
 import React from 'react';
 import "../styles/Hero.css";
 import heroImg from '../assets/hero.webp';
+import {motion} from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className='hero-section'>
+    <div className='hero-section' data-scroll data-scroll-section data-scroll-speed={-.4} >
       <div className="hero-container">
         
 

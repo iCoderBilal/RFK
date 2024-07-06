@@ -1,0 +1,52 @@
+.marquee{
+    background: #E7E7E7;
+    padding: 40px 0;
+    border-top-right-radius:30px ;
+    border-top-left-radius:30px ;
+}
+
+.marquee-container{
+    padding: 30px 0px;
+  
+ border-top: 2px solid #303030;
+ border-bottom: 2px solid #303030;
+ display: flex;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.marquee-container .marquee-item{
+    display: flex;
+    padding-right: 70px;
+}
+
+.marquee-container .marquee-item h1{
+    font-size: 9vw;
+    color: #000738;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    padding-right: 25px;
+    align-self: center;
+ 
+}
+
+.marquee-container .marquee-item img{
+  width: 150px;
+  border: 6px solid black;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .marquee{
+        border-top-right-radius:15px ;
+        border-top-left-radius:15px ;
+    }
+    .marquee-container .marquee-item  h1{
+        font-size: 17vw;
+    }
+
+    .marquee-container .marquee-item img{
+        width: 100px;
+    }
+} 
